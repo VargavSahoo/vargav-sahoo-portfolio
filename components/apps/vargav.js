@@ -18,7 +18,7 @@ export class AboutVargav extends Component {
             "about": <About />,
             "education": <Education />,
             "skills": <Skills />,
-            "experience": <Experience />
+            "experience": <Experience />,
             "projects": <Projects />,
             "resume": <Resume />,
         }
@@ -56,15 +56,15 @@ export class AboutVargav extends Component {
         return (
             <>
                 <div id="about" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "about" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="about vargav" src="./themes/Yaru/status/about.svg" />
+                    <img className=" w-3 md:w-4" alt="about Vargav" src="./themes/Yaru/status/about.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
                 </div>
                 <div id="education" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "education" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="vargav' education" src="./themes/Yaru/status/education.svg" />
+                    <img className=" w-3 md:w-4" alt="Vargav' education" src="./themes/Yaru/status/education.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Education</span>
                 </div>
                 <div id="skills" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "skills" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="vargav' skills" src="./themes/Yaru/status/skills.svg" />
+                    <img className=" w-3 md:w-4" alt="Vargav' skills" src="./themes/Yaru/status/skills.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Skills</span>
                 </div>
                 <div
@@ -78,20 +78,17 @@ export class AboutVargav extends Component {
     " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"
   }
 >
-  <img className="w-3 md:w-4" alt="vargav experience" src="./themes/Yaru/status/experience.svg" />
+  <img className="w-3 md:w-4" alt="Vargav experience" src="./themes/Yaru/status/experience.svg" />
   <span className="ml-1 md:ml-2 text-gray-50">Experience</span>
 </div>
 
                 <div id="projects" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "projects" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="vargav' projects" src="./themes/Yaru/status/projects.svg" />
+                    <img className=" w-3 md:w-4" alt="Vargav' projects" src="./themes/Yaru/status/projects.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Projects</span>
                 </div>
                 <div id="resume" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "resume" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="vargav's resume" src="./themes/Yaru/status/download.svg" />
+                    <img className=" w-3 md:w-4" alt="Vargav's resume" src="./themes/Yaru/status/download.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
-                </div>
-                <div className='my-0.5 w-28 md:w-full h-8 px-2 md:px-2.5 flex' >
-                    <iframe src="https://github.com/sponsors/vargavsahoo/button" title="Sponsor vargavsahoo" width={"100%"} height={"100%"} ></iframe>
                 </div>
             </>
         );
@@ -119,10 +116,10 @@ export class AboutVargav extends Component {
     }
 }
 
-export default Aboutvargav;
+export default AboutVargav;
 
-export const displayAboutvargav = () => {
-    return <Aboutvargav />;
+export const displayAboutVargav = () => {
+    return <AboutVargav />;
 }
 
 
@@ -141,10 +138,10 @@ function About() {
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
             </div>
             <ul className="mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
-                <li className="list-pc">I have **2 years of experience** in **AWS, CI/CD, Terraform, and automation**, optimizing **cloud infrastructure**.</li>
-                <li className="mt-3 list-building">I love **building scalable and automated systems** that enhance operational efficiency.</li>
-                <li className="mt-3 list-time">When I’m not automating deployments, I enjoy **reading books, solving DevOps challenges, and exploring new cloud technologies.**</li>
-                <li className="mt-3 list-star">I also have a strong interest in **monitoring, observability, and Kubernetes orchestration!**</li>
+                <li className="list-pc">I have 4 years of experience in AWS, CI/CD, Terraform, and automation, optimizing cloud infrastructure.</li>
+                <li className="mt-3 list-building">I love building scalable and automated systems that enhance operational efficiency.</li>
+                <li className="mt-3 list-time">When I’m not automating deployments, I enjoy reading books, solving DevOps challenges, and exploring new cloud technologies.</li>
+                <li className="mt-3 list-star">I also have a strong interest in AI/ML, Deep Learning, ComputerVision</li>
             </ul>
         </>
     )
@@ -189,10 +186,10 @@ function Skills() {
             </div>
             <ul className="tracking-tight text-sm md:text-base w-10/12 emoji-list">
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    I've worked extensively with **Cloud Platforms, Infrastructure as Code, and DevOps Tools**.
+                    I've worked extensively with Cloud Platforms, Infrastructure as Code, and DevOps Tools.
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
-                    My **expertise** includes **AWS, Terraform, Kubernetes, CI/CD, Ansible, Docker, and Jenkins!**
+                    My expertise includes AWS, Terraform, Kubernetes, CI/CD, Ansible, Docker, and Jenkins!
                 </li>
                 <li className="list-arrow text-sm md:text-base mt-4 leading-tight tracking-tight">
                     Here are the technologies I use frequently:
@@ -251,7 +248,7 @@ function Experience() {
           <h3 className="text-lg md:text-xl font-bold leading-tight">
             Capgemini Technology Services India Ltd.
             <span className="ml-2 text-sm text-gray-300">
-              (Feb 2022 - Feb 2024)
+              (Feb 2022)
             </span>
           </h3>
           <ul className="list-disc ml-5 mt-2 space-y-1">
@@ -446,10 +443,8 @@ function Experience() {
     );
 }
 
-export default Projects;
-
 function Resume() {
     return (
-        <iframe className="h-full w-full" src="./files/vargav-sahoo-Resume.pdf" title="vargav sahoo resume" frameBorder="0"></iframe>
+        <iframe className="h-full w-full" src="./files/Vargav-sahoo-Resume.pdf" title="Vargav sahoo resume" frameBorder="0"></iframe>
     )
 }

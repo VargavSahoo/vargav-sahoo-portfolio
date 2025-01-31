@@ -12,9 +12,9 @@ export class Terminal extends Component {
         this.prev_commands = [];
         this.commands_index = -1;
         this.child_directories = {
-                root: [ "books", "projects","personal-documents","skills", "languages","interests"],
+                root: [ "books", "projects","personalDocuments","skills", "languages","interests"],
                 books: ["The DevOps Handbook.pdf","Terraform Up & Running.pdf", "The Phoenix Project.pdf", "The Site Reliability Workbook.pdf" ],
-                personal-documents: [ "Vargav-Sahoo-Resume.pdf"],
+                personalDocuments: [ "Vargav-Sahoo-Resume.pdf"],
                 skills: [ "AWS", "Terraform", "Kubernetes", "Jenkins", "Docker", "Ansible", "CI/CD Pipelines" ],
                 projects: [ "CI-CD-Pipeline-Setup", "Multi-Tier-AWS-Website", "K8s-Orchestration", "Ansible-Automation", "Docker-Swarm-Playground"],
                 interests: ["DevOps", "Cloud Infrastructure", "Software Engineering", "Deep Learning", "Computer Vision" ],
@@ -193,7 +193,7 @@ export class Terminal extends Component {
                     break;
                 }
 
-                if (rest === "personal-documents") {
+                if (rest === "personalDocuments") {
                     result = `bash /${this.curr_dir_name} : Permission denied 😏`;
                     break;
                 }
@@ -221,7 +221,7 @@ export class Terminal extends Component {
                 if (target in this.child_directories) {
                     result = this.childDirectories(target).join("");
                 }
-                else if (target === "personal-documents") {
+                else if (target === "personalDocuments") {
                     result = "Nope! 🙃";
                     break;
                 }
