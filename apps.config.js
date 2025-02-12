@@ -102,14 +102,14 @@ const apps = [
         screen: () => {},
     },
     {
-        id: "tars",
-        title: "Ask Tars",
-        icon: './themes/Yaru/apps/tars.svg',
+        id: "chatgpt",
+        title: "Ask ChatGPT",
+        icon: './themes/Yaru/apps/chatgpt.svg',
         disabled: false,
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://www.vargavsahoo.com/tars"
+        url: "https://chat.openai.com/"
     },
 ]
 
